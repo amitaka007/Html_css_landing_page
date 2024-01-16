@@ -1,0 +1,43 @@
+#lottie-container {
+  width: 100%; /* Set the width */
+  height: auto; /* Set the height */
+}
+
+.video-docker video {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-docker::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Hide the original grid when Slick slider is active */
+ 
+
+/* styles.css */
+
+/* Default styles for the div to show on screens 640px or less */
+#indicators-carousel {
+    display: none;
+  }
+  
+  /* Media query to show the div on screens with a width of 640 pixels or less */
+  @media (max-width: 640px) {
+    #indicators-carousel {
+      display: block;
+    }
+  
+    /* Hide the div meant for larger screens */
+    #Projects {
+      display: none;
+    }
+  }
